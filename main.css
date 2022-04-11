@@ -1,3 +1,20 @@
 .emoji{
     z-index: 999;
 }
+
+.bg {
+    background: url(imgs/ok-icon.jpg) bottom var(--parallaxY, 0px) left 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+body::after{
+    content: "";
+    height: 2px;
+    position: fixed;
+    top: calc(50% - 1px);
+    left: 0;
+    right: 0;
+    background-color: red;
+    z-index: 1000;
+}
